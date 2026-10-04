@@ -1,0 +1,5 @@
+{
+  "model": {"d_model": 1024, "layers": 15, "heads": 32, "d_ff": 4096, "position": "shaw", "attention_impl": "dense", "shaw_cross_term": true, "value_bins": 128},
+  "training": {"steps": 3700000, "batch_size": 4096, "microbatch_size": 8, "lr": 0.001, "lr_milestones": [3200000, 3600000], "lr_values": [0.0003, 0.0001], "swa_start": 3200000, "swa_every": 1000, "checkpoint_every": 1000, "eval_every": 10000, "seed": 0, "precision": "float32"},
+  "loss": {"category": 0.1}
+}
